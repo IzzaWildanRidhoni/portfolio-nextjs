@@ -29,12 +29,12 @@ const Hero1 = ({
   description = "Finely crafted components built with React, Tailwind and Shadcn UI. Developers can copy and paste these blocks directly into their project.",
   buttons = {
     primary: {
-      text: "Discover all components",
-      url: "https://www.shadcnblocks.com",
+      text: "Showcase",
+      url: "#",
     },
     secondary: {
       text: "View on GitHub",
-      url: "https://www.shadcnblocks.com",
+      url: "https://github.com/IzzaWildanRidhoni",
     },
   },
   image = {
@@ -44,7 +44,7 @@ const Hero1 = ({
 }: Hero1Props) => {
   return (
     <section className="py-32">
-      <div className="container">
+      <div className="container mx-auto">
         <div className="grid items-center gap-8 lg:grid-cols-2">
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             {badge && (
