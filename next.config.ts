@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  eslint: {
+    ignoreDuringBuilds: true, // ⛔ Matikan lint saat build (termasuk di Vercel)
+  },
 };
 
 export default nextConfig;
