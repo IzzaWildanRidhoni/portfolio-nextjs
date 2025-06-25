@@ -3,6 +3,7 @@ import Hero01 from "@/components/hero-01/hero-01";
 import { Navbar1 } from "@/components/navbar1";
 import Timeline from "@/components/timeline-04/timeline-04";
 import Footer from "@/components/footer-04/footer-04";
+import Testimonial from "@/components/testimonial-06/testimonial-06";
 
 export default function Home() {
   return (
@@ -10,7 +11,8 @@ export default function Home() {
       <Navbar1 />
       <Hero01 />
       <Features01Page />
-      <Timeline />
+      {/* <Timeline /> */}
+      <Testimonial />
       <Footer />
     </>
   );
