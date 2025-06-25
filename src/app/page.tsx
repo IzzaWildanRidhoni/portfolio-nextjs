@@ -4,6 +4,7 @@ import { Navbar1 } from "@/components/navbar1";
 import Timeline from "@/components/timeline-04/timeline-04";
 import Footer from "@/components/footer-04/footer-04";
 import Testimonial from "@/components/testimonial-06/testimonial-06";
+import Contact from "@/components/contact-03/contact-03";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Features01Page />
       {/* <Timeline /> */}
       <Testimonial />
+      <Contact />
       <Footer />
     </>
   );
