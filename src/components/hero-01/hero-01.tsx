@@ -8,7 +8,7 @@ const Hero01 = () => {
     <div className="min-h-screen flex items-center justify-center px-6">
       <div className="text-center max-w-2xl">
         <Badge className="bg-gradient-to-br via-70% from-primary via-muted/30 to-primary rounded-full py-1 border-none">
-          Just released v1.0.0
+          Build Website Now
         </Badge>
         <h1 className="mt-6 text-4xl sm:text-5xl md:text-6xl md:leading-[1.2] font-bold">
           Hi, I'm Izza Wildan Ridhoni Fullstack Web Developer
