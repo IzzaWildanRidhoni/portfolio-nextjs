@@ -3,6 +3,7 @@ import { Logo } from "./logo";
 import { NavMenu } from "./nav-menu";
 import { NavigationSheet } from "./navigation-sheet";
 import { SunIcon } from "lucide-react";
+import Link from "next/link";
 
 const Navbar02Page = () => {
   return (
@@ -16,10 +17,14 @@ const Navbar02Page = () => {
         </div>
 
         <div className="flex items-center gap-3">
-          <Button variant="outline" className="hidden sm:inline-flex">
-            Sign In
-          </Button>
-          <Button>Sign Up</Button>
+          <Link href="/login">
+            <Button variant="outline" className="hidden sm:inline-flex">
+              Sign In
+            </Button>
+          </Link>
+          <Link href="/register">
+            <Button>Sign Up</Button>
+          </Link>
           <Button size="icon" variant="outline">
             <SunIcon />
           </Button>
