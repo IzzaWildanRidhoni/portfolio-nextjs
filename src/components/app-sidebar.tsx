@@ -5,13 +5,18 @@ import {
   BookOpen,
   Bot,
   Command,
+  Contact2Icon,
+  Dock,
   Frame,
+  Home,
   LifeBuoy,
+  Lock,
   Map,
   PieChart,
   Send,
   Settings2,
   SquareTerminal,
+  Users2,
 } from "lucide-react";
 
 import { NavMain } from "@/components/nav-main";
@@ -34,93 +39,6 @@ const data = {
     email: "m@example.com",
     avatar: "/avatars/shadcn.jpg",
   },
-  navMain: [
-    {
-      title: "Playground",
-      url: "#",
-      icon: SquareTerminal,
-      isActive: true,
-      items: [
-        {
-          title: "History",
-          url: "#",
-        },
-        {
-          title: "Starred",
-          url: "#",
-        },
-        {
-          title: "Settings",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Models",
-      url: "#",
-      icon: Bot,
-      items: [
-        {
-          title: "Genesis",
-          url: "#",
-        },
-        {
-          title: "Explorer",
-          url: "#",
-        },
-        {
-          title: "Quantum",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Documentation",
-      url: "#",
-      icon: BookOpen,
-      items: [
-        {
-          title: "Introduction",
-          url: "#",
-        },
-        {
-          title: "Get Started",
-          url: "#",
-        },
-        {
-          title: "Tutorials",
-          url: "#",
-        },
-        {
-          title: "Changelog",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Settings",
-      url: "#",
-      icon: Settings2,
-      items: [
-        {
-          title: "General",
-          url: "#",
-        },
-        {
-          title: "Team",
-          url: "#",
-        },
-        {
-          title: "Billing",
-          url: "#",
-        },
-        {
-          title: "Limits",
-          url: "#",
-        },
-      ],
-    },
-  ],
   navSecondary: [
     {
       title: "Support",
@@ -135,19 +53,34 @@ const data = {
   ],
   projects: [
     {
-      name: "Design Engineering",
-      url: "#",
+      name: "Dashboard ",
+      url: "/dashboard",
+      icon: Home,
+    },
+    {
+      name: "Portfolio ",
+      url: "/manage/portfolio",
       icon: Frame,
     },
     {
-      name: "Sales & Marketing",
-      url: "#",
-      icon: PieChart,
+      name: "Blog ",
+      url: "/manage/blog",
+      icon: Dock,
     },
     {
-      name: "Travel",
-      url: "#",
-      icon: Map,
+      name: "Contact ",
+      url: "/manage/contact",
+      icon: Contact2Icon,
+    },
+    {
+      name: "User Management",
+      url: "/manage/user",
+      icon: Users2,
+    },
+    {
+      name: "Role & Permission ",
+      url: "/manage/role ",
+      icon: Lock,
     },
   ],
 };
@@ -173,7 +106,6 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         </SidebarMenu>
       </SidebarHeader>
       <SidebarContent>
-        <NavMain items={data.navMain} />
         <NavProjects projects={data.projects} />
         <NavSecondary items={data.navSecondary} className="mt-auto" />
       </SidebarContent>

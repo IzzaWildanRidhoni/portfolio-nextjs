@@ -79,8 +79,8 @@ export function NavProjects({
         ))}
         <SidebarMenuItem>
           <SidebarMenuButton>
-            <MoreHorizontal />
-            <span>More</span>
+            {/* <MoreHorizontal />
+            <span>More</span> */}
           </SidebarMenuButton>
         </SidebarMenuItem>
       </SidebarMenu>
