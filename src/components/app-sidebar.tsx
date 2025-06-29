@@ -54,32 +54,32 @@ const data = {
   projects: [
     {
       name: "Dashboard ",
-      url: "/dashboard",
+      url: "/admin/dashboard",
       icon: Home,
     },
     {
       name: "Portfolio ",
-      url: "/manage/portfolio",
+      url: "/admin/portfolio",
       icon: Frame,
     },
     {
       name: "Blog ",
-      url: "/manage/blog",
+      url: "/admin/blog",
       icon: Dock,
     },
     {
       name: "Contact ",
-      url: "/manage/contact",
+      url: "/admin/contact",
       icon: Contact2Icon,
     },
     {
       name: "User Management",
-      url: "/manage/user",
+      url: "/admin/user",
       icon: Users2,
     },
     {
       name: "Role & Permission ",
-      url: "/manage/role ",
+      url: "/admin/role ",
       icon: Lock,
     },
   ],

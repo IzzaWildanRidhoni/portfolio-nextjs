@@ -63,7 +63,7 @@ export function LoginForm({
                   </div>
                   <Input id="password" type="password" required />
                 </div>
-                <Link href="/dashboard">
+                <Link href="/admin/dashboard">
                   <Button type="submit" className="w-full">
                     Login
                   </Button>
